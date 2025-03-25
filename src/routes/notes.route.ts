@@ -9,8 +9,7 @@ notes.get('/', async (ctx: ContextExtended) => {
     const notes = await db.prepare("SELECT * FROM note LIMIT 50")
         .run();
 
-    // return Response.json(notes.results)
-    return Response.json({name: "fiffy"})
+    return Response.json(notes.results)
  });
 
 // TODO: In-Workshop Activities.
