@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: (origin: string) => {
       if (allowedOrigins.has(origin)) {
-        return origin; // Allow this origin
+        return origin; // Allow this originnnnnn
       }
       return null; // Disallow this origin
     },
